@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Era-tour - travel agency in Azerbaijan</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="d-flex align-items-center">
+                <a href=""><img class="logo" src="img/ERATUR-logo-yeni1.png" alt="Logo"></a>
+                <ul class="navlist">
+                    <div class="dropdown">
+                        <li><a href="">Şirkət</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">Haqqımızda</a></li>
+                                    <li><a href="">Sertifikatlar</a></li>
+                                    <li><a href="">Karyera</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown">
+                        <li><a href="">Müştəri rəyləri</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">Müştəri fikirləri</a></li>
+                                    <li><a href="">Səyahət görüntüləri</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown">
+                        <li><a href="">Turlar</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">Daxili turlar</a></li>
+                                    <li><a href="">Xarici turlar</a></li>
+                                    <li><a href="">İntensiv turlar</a></li>
+                                    <li><a href="">Qrup turları</a></li>
+                                    <li><a href="">Ekskursiyalar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <li><a href="">Xidmətlər</a></li>
+                    <div class="dropdown">
+                        <li><a href="">Əməkdaşlıq</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">Avia şirkətlər</a></li>
+                                    <li><a href="">Korporativ əməkdaşlıq</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <li><a href="">Azərbaycanı kəşf et</a></li>
+                    <li><a href="">Əlaqə</a></li>
+                    <div class="dropdown">
+                        <li><a href=""><img src="img/az.png" alt="aze"> AZ</a>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href=""><img src="img/russianflag.png" alt="Ru" class="w-25"> ru</a></li>
+                                    <li><a href=""><img src="img/ukFlag.png" alt="En" class="w-25"> en</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </div>
+                    <li><a href=""><img src="img/purplephone.png" alt="Phone" id="phone"> (+99455) 596-05-14</a></li>
+                </ul>
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars-staggered" onclick="OpenBars()"></i>
+                    <i class="fa-solid fa-xmark" onclick="OpenBars()"></i>
+                </div>
+            </nav>
+            <div class="hiddenbars text-center vh-100 pt-5">
+                <ul class="hiddenlist">
+                    <li><a href=""><img src="img/ERATUR-logo-yeni1.png" alt="Logo"></a></li>
+                    <li><a href="">Şirkət<sub>➘</sub></a></li>
+                    <li><a href="">Müştəri rəyləri<sub>➘</sub></a></li>
+                    <li><a href="">Turlar <sub>➘</sub></a></li>
+                    <li><a href="">Xidmətlər</a></li>
+                    <li><a href="">Əməkdaşlıq <sub>➘</sub></a></li>
+                    <li><a href="">Azərbaycanı kəşf et</a></li>
+                    <li><a href="">Əlaqə</a></li>
+                    <li><a href="" class="qiymet text-light rounded-pill">Qiymət təklifi al</a></li>
+                </ul>
+                <div class="icons d-flex justify-content-center">
+                    <a href="" class="fa-brands fa-facebook-f"></a>
+                    <a href="" class="fa-brands fa-instagram"></a>
+                    <a href="" class="fa-brands fa-youtube"></a>
+                    <a href="" class="fa-brands fa-linkedin"></a>
+                </div>
+                <ul class="d-flex align-items-center flags justify-content-center">
+                    <li><a href=""><img src="img/az.png" alt=""> az</a></li>
+                    <li><a href=""><img src="img/ukFlag.png" alt=""> en</a></li>
+                    <li><a href=""><img src="img/russianflag.png" alt=""> ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="slider">
+            <img id="plane" src="img/airplane.png" alt="Ağ təyyarə mən uçmuşam">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+                <div class="parallax-bg"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: url('img/slider-1.png') center/cover; height: 100vh;">
+                        <div class="title container" data-swiper-parallax="-300">Bizimlə dünyanı kəşf edin</div>
+                        <div class="subtitle container" data-swiper-parallax="-200">İstədiyiniz ölkələri asanlıqla kəşf etməyiniz üçün 'ERATUR' şirkəti hər zaman sizin yanınızdadır.</div>
+                        <div class="text-btn container" data-swiper-parallax="-100"><a href="">Ətraflı 》</a></div>
+                    </div>
+                    <div class="swiper-slide" style="background: url('img/slider-2.png') center/cover; height: 100vh;">
+                        <div class="title container" data-swiper-parallax="-300">Təbiətin gözəlliyindən həzz alın</div>
+                        <div class="subtitle container" data-swiper-parallax="-200">Möhtəşəm təbiəti ilə məşhur ölkə seçimində sizə kömək edəcəyik.</div>
+                        <div class="text-btn container" data-swiper-parallax="-100"><a href="">Ətraflı 》</a></div>
+                    </div>
+                    <div class="swiper-slide" style="background: url('img/slider-3.jpeg') center/cover; height: 100vh;">
+                        <div class="title container" data-swiper-parallax="-300">Sən xəyal et, biz reallaşdıraq</div>
+                        <div class="subtitle container" data-swiper-parallax="-200">Avropanın istənilən ölkəsinə viza dəstəyi.</div>
+                        <div class="text-btn container" data-swiper-parallax="-100"><a href="">Ətraflı 》</a></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="turlar">
+            <h2 class="txtblack text-center fw-bold py-5">Qaynar turlar</h2>
+                <div class="row row-cols-1 row-cols-md-3 container m-auto">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="w-100 tur">
+                                <a href=""><img src="img/tur1.webp" class=" object-fit-cover h-75 w-100" alt="..."></a>
+                                <div id="spans">
+                                    <span>ALANYA</span>
+                                    <span>TURKIYE</span>
+                                    <span>Outgoing tourism</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase txtred fw-bold">Səyahətinizin qaynar notları...</h5>
+                                <p class="card-text txtgray text-uppercase pb-4 fs12">Səyahətinizin qaynar notları alanyada!!!</p>
+                                <p>1 nəfərlik qiymətə daxildir:</p>
+                                <ul class="px-3 pb-4">
+                                    <li><i class="fa-solid fa-check"></i> Aviabilet</li>
+                                    <li><i class="fa-solid fa-check"></i> 20 kq baqaj</li>
+                                    <li><i class="fa-solid fa-check"></i> Otel</li>
+                                </ul>
+                                <i class="fa-regular fa-sun txtgray d-flex justify-content-end px-4"></i> <hr>
+                                <div class="card-ftr d-flex align-items-center justify-content-between p-2">
+                                    <h4 class="txtred">683 USD</h4>
+                                    <a href="" class="card-btn rounded-pill txtblack">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="w-100 tur">
+                                <a href=""><img src="img/tur2.jpg" class=" object-fit-cover h-75 w-100" alt="..."></a>
+                                <div id="spans">
+                                    <span>ALANYA</span>
+                                    <span>TURKIYE</span>
+                                    <span>Outgoing tourism</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase txtred fw-bold">Səyahətinizin qaynar notları...</h5>
+                                <p class="card-text txtgray text-uppercase pb-4 fs12">Səyahətinizin qaynar notları alanyada!!!</p>
+                                <p>1 nəfərlik qiymətə daxildir:</p>
+                                <ul class="px-3 pb-4">
+                                    <li><i class="fa-solid fa-check"></i> Aviabilet</li>
+                                    <li><i class="fa-solid fa-check"></i> 20 kq baqaj</li>
+                                    <li><i class="fa-solid fa-check"></i> Otel</li>
+                                </ul>
+                                <i class="fa-regular fa-sun txtgray d-flex justify-content-end px-4"></i> <hr>
+                                <div class="card-ftr d-flex align-items-center justify-content-between p-2">
+                                    <h4 class="txtred">683 USD</h4>
+                                    <a href="" class="card-btn rounded-pill txtblack">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="w-100 tur">
+                                <a href=""><img src="img/tur4.jpg" class=" object-fit-cover h-75 w-100" alt="..."></a>
+                                <div id="spans">
+                                    <span>ALANYA</span>
+                                    <span>TURKIYE</span>
+                                    <span>Outgoing tourism</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-uppercase txtred fw-bold">Səyahətinizin qaynar notları...</h5>
+                                <p class="card-text txtgray text-uppercase pb-4 fs12">Səyahətinizin qaynar notları alanyada!!!</p>
+                                <p>1 nəfərlik qiymətə daxildir:</p>
+                                <ul class="px-3 pb-4">
+                                    <li><i class="fa-solid fa-check"></i> Aviabilet</li>
+                                    <li><i class="fa-solid fa-check"></i> 20 kq baqaj</li>
+                                    <li><i class="fa-solid fa-check"></i> Otel</li>
+                                </ul>
+                                <i class="fa-regular fa-sun txtgray d-flex justify-content-end px-4"></i> <hr>
+                                <div class="card-ftr d-flex align-items-center justify-content-between p-2">
+                                    <h4 class="txtred">683 USD</h4>
+                                    <a href="" class="card-btn rounded-pill txtblack">Ətraflı</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section> <br> <br>
+        
+        <section class="kesfet py-5">
+            <h2 class="txtblack text-center fw-bold pb-5">Azərbaycanı kəşf et</h2>
+            <div class="row row-cols-1 row-cols-md-4 container m-auto">
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="card-img"><img src="img/qebele.jpg" alt=""></div>
+                            <img src="img/qebelemap.png" alt="" class="img2">
+                            <h2>Qəbələ</h2>
+                            <p class="text-uppercase txtgray fs12 py-3 tracking-tighter" id="card-p">Mədəniyyət & Tarixi / təbiəti / <br> gəzməli yerlər /</p>
+                            <a href="" class="etrafli2 my-3">Ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="card-img"><img src="img/ismayilli1.jpg" alt=""></div>
+                            <img src="img/ismayillimap.png" alt="" class="img2">
+                            <h2>Ismayıllı</h2>
+                            <p class="text-uppercase txtgray fs12 py-3 tracking-tighter" id="card-p">Mədəniyyət & Tarixi / təbiəti / <br> gəzməli yerlər /</p>
+                            <a href="" class="etrafli2 my-3">Ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="card-img"><img src="img/azerbaijan-2.png" alt=""></div>
+                            <img src="img/bakimap.png" alt="" class="img2">
+                            <h2>Bakı</h2>
+                            <p class="text-uppercase txtgray fs12 py-3 tracking-tighter" id="card-p">Mədəniyyət & Tarixi / təbiəti / <br> gəzməli yerlər /</p>
+                            <a href="" class="etrafli2 my-3">Ətraflı</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="card-img"><img src="img/seki1.jpg" alt=""></div>
+                            <img src="img/sekimap.png" alt="" class="img2">
+                            <h2>Şəki</h2>
+                            <p class="text-uppercase txtgray fs12 py-3 tracking-tighter" id="card-p">Mədəniyyət & Tarixi / təbiəti / <br> gəzməli yerlər /</p>
+                            <a href="" class="etrafli2 my-3">Ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="xidmet">
+            <div class="container d-flex">
+                <div class="xidmet-text">
+                    <h2>Xidmətlərimiz</h2>
+                    <p class="py-4">'ERATUR' turizm şirkəti sizə yüksək keyfiyyətli <br>
+                        xidmətlərini təqdim edir. Səyahətinizi bizə həvalə edin.</p>
+                    <div class="text-btn pt-4 text-uppercase"><a href="">Rezervasiya 》</a></div>
+                </div>
+                <div class="xidmet-icons">
+                    <div class="icon">
+                        <div></div>
+                        <a href="">Korporativ Xidmet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 600,
+            parallax: true,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                type: "fraction",
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="balash.js"></script>
+</body>
+</html>
