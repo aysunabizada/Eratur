@@ -1,5 +1,5 @@
-/* *{font-family: 'CocoSharp';} */
-html,body{overflow-x: hidden;}
+*{font-family: 'CocoSharp';}
+html,body{overflow-x: hidden; position: relative;}
 .txtblack{ color: #302E2E;}
 .txtgray{ color: #949494;}
 .txtred{ color: #AA2A55;}
@@ -203,7 +203,30 @@ nav .logo, .hiddenbars img{width: 150px;}
 }
 
 
-
+.footer-top{
+    background: #387bb1;
+    height: 420px;
+}
+.footer-top img{
+    position: absolute;
+    object-fit: cover;
+    height: 420px;
+    width: 100%;
+}
+.footer-top .btn{
+    width: 320px;
+    position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.footer-top .btn button{
+    background-color: #287bc0;
+    border: 0;
+    padding: 11px 50px;
+    color: #fff;
+    border-radius: 4px;
+}
 .footer-center{
     background: #1e2026;
     color: #fff;
@@ -218,7 +241,7 @@ nav .logo, .hiddenbars img{width: 150px;}
     gap: 3vw;
     font-size: 1.1em;
 } 
-.fc-top .icons2 i{
+.fc-top .icons2 a{
     background: #AFBBC6;
     border-radius: 50%;
     width: 40px;
@@ -226,16 +249,50 @@ nav .logo, .hiddenbars img{width: 150px;}
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: .7s;
 }
+.fa-facebook-f:hover{background: #1a68a7 !important;}
+.fa-instagram:hover{background: #811aa7 !important;}
+.fa-youtube:hover{background: #a71a1a !important;}
+.fa-linkedin-in:hover{background: #1a68a7 !important;}
 h2 span{ color: #8469ad }
-.fc-bottom a{color: #fff;}
+.fc-bottom a, .icons2 a{color: #fff;}
 .fc-bottom ul{
     gap: 3vw;
     flex-direction: column;
 }
+.link{ position: relative;}
+.link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+}
+.link::before{
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+.link:hover::before{width: 100%;}
+
 .footer-bottom{
     gap: 3.5vw;
     flex-direction: column;
+}
+.whatsapp{
+    position: fixed;
+    z-index: 9999999999999;
+    bottom: 45px;
+    right: 35px;
+}
+.whatsapp a{
+    background: #29A71A;
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 2.5em;
+    border-radius: 50%;
 }
 @media only screen and (min-width:1100px){
     .navlist{display: flex;}
@@ -244,7 +301,6 @@ h2 span{ color: #8469ad }
     nav .logo{padding-right: 25px;}
     .swiper-wrapper .title{ font-size: 2.5em;}
 
-    
     .fc-top{
         flex-direction: row;
         justify-content: space-between;
