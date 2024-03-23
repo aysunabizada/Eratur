@@ -152,7 +152,7 @@ nav .logo, .hiddenbars img{width: 150px;}
     justify-content: center;
     align-items: center;
 }
-.turlar .card{ box-shadow: #64646f33 0px 7px 29px 0px;}
+.turlar .card, .oyren-cards .card{ box-shadow: #64646f33 0px 7px 29px 0px;}
 
 .kesfet .card{
     width: 25%;
@@ -201,8 +201,28 @@ nav .logo, .hiddenbars img{width: 150px;}
     font-size: .8em;
     letter-spacing: 2px;
 }
-
-
+.oyrenmek{
+    background: #F9F9F9;
+    height: 10  0vh;
+}
+.oyren-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.oyren-cards a{color: #302E2E;}
+.oyren-card-img{
+    width: 224px;
+    height: 220px;
+}
+.oyren-card-img img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: left;
+}
 .footer-top{
     background: #387bb1;
     height: 420px;
